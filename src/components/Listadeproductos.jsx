@@ -13,7 +13,7 @@ const Listadeproductos = () => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/v1/products')
+    axios.get('https://back-proy5-9ks61nrs9-carlosgt7274.vercel.app/api/v1/products')
       .then(response => {
         setProductos(response.data.products);
       })
