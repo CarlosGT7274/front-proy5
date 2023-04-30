@@ -7,7 +7,7 @@ const ProductoIndividual = () => {
   const [producto, setProducto] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/api/v1/products/${id}`)
+    axios.get(`https://back-proy5-9ks61nrs9-carlosgt7274.vercel.app/api/v1/products/${id}`)
       .then(response => {
         setProducto(response.data.producto);
       })
